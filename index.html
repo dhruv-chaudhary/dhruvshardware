@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dhruv Chaudhary | Web Developer</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+	<link rel="icon" type="image/png" href="favicon.png">
+	<link href='http://fonts.googleapis.com/css?family=Raleway:200,400' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<style>
+		html {
+			height: 100%;
+			width: 100%;
+		}
+		body {
+			height: 100%;
+			width: 100%;
+			background-image: url('bg.png');
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+			background-color: #464646;
+			font-family: 'Raleway', sans-serif;
+		}
+
+		#overlay {
+			height: 100%;
+			width: 100%;
+			top: 0;
+			left: 0;
+			position: fixed;
+			background: #000;
+			opacity: 0.65;
+		}
+
+		#content {
+			position: fixed;
+			z-index: 10;
+			color: #DDD;
+			top:0; left: 0; right: 0; bottom: 0;
+			margin: auto;
+			font-weight: 200;
+			text-align: center;
+			width: 100%;
+			min-width: 320px;
+			height: 250px;
+		}
+
+		#headlines > h1 {
+			font-size: 3em;
+			margin: 0px;
+			font-weight: inherit;
+		}
+
+		#headlines > h4 {
+			margin: 10px 0 0 0;
+			font-size: 1.4em;
+			font-weight: inherit;
+		}
+
+		#headlines > h4 > span {
+			padding: 0 20px;
+			font-size: 0.2em;
+			position: relative;
+			top: -4px;
+		}
+
+		#social-links {
+			margin-top: 30px;
+		}
+
+		#social-links a {
+			color: inherit;
+			text-decoration: none;
+			border: 2px solid #DDD;
+			border-radius: 50%;
+			height: 50px;
+			width: 50px;
+			margin-left: 10px;
+			display: inline-block;
+			font-weight: inherit;
+			font-size: 1.5em;
+			line-height: 48px;
+		}
+
+		#social-links a:first-child {
+			margin-left: 0;
+		}
+
+		#social-links a:hover {
+			color: #FFF;
+			border: 2px solid white;
+		}
+
+		@media (min-width: 348px) and (max-width: 768px) {
+			#content {
+				height: 200px;
+			}
+
+			body {
+				background-image: url('bg.png');
+			}
+		}
+
+		@media (min-width: 769px) {
+			body {
+				background-image: url('bg.png');
+			}
+
+			#content {
+				height: 230px;
+			}
+
+			#content h1 {
+				font-weight: inherit;
+				font-size: 3.5em;
+			}
+
+			#content h4 {
+				font-weight: inherit;
+				font-size: 1.5em;
+			}
+
+			#social-links {
+				margin-top: 30px;
+			}
+
+			#social-links a {
+				height: 70px;
+				width: 70px;
+				margin-left: 20px;
+				font-size: 1.5em;
+				line-height: 68px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div id="overlay"></div>
+	<div id="content">
+		<div id="headlines">
+			<h1>Dhruv's Hardware</h1>
+			<h4>Reviews<span class="fa fa-circle"></span>Tutorials<span class="fa fa-circle"></span>Gaming</h4>
+		</div>
+		<div id="social-links">
+			<a href="https://www.facebook.com/pg/Dhruvs-Hardware-1542595435862014" target="_blank"><i class="fa fa-facebook"></i></a>
+			<a href="https://www.instagram.com/dhruvshardware/" target="_blank"><i class="fa fa-instagram"></i></a>
+			<a href="https://www.youtube.com/channel/UCT4Ft2eFQdHr-batys3WeCQ" target="_blank"><i class="fa fa-youtube"></i></a>
+			<a href="https://twitter.com/dhruvshardware" target="_blank"><i class="fa fa-twitter"></i></a>
+		</div>
+    </div>
+</body>
+</html>
