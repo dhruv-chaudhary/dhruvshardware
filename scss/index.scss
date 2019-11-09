@@ -1,0 +1,366 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro|Ubuntu&display=swap");
+
+$main-menu-background: #0d4a71;
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+h3 {
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    max-width: 1044px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.align-top {
+    align-self: flex-start;
+}
+
+#top-info-bar {
+    display: none;
+}
+
+.brand {
+    font-size: 2rem;
+
+    span {
+        color: #00a3da;
+    }
+}
+
+#main-navbar-container {
+    background: $main-menu-background;
+    color: #fff;
+
+    .wrapper {
+        align-items: center;
+    }
+
+    .brand {
+        padding-top: 25px;
+    }
+
+    nav {
+        a {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: inherit;
+            margin: 0 20px;
+            padding: 30px 0;
+            display: inline-block;
+        }
+
+        a:last-of-type {
+            margin-right: 0;
+        }
+
+        a:first-of-type {
+            margin-left: 0;
+        }
+
+        a.active,
+        a:hover {
+            border-bottom: 7px solid #fec537;
+        }
+    }
+}
+
+#call-to-action-container {
+    height: 350px;
+    overflow: hidden;
+
+    .image-container {
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        transition: left 0.5s;
+
+        .wrapper {
+            justify-content: space-evenly;
+            height: 100%;
+        }
+    }
+
+    h3 {
+        margin: 0;
+        text-align: center;
+        color: #fff;
+        font-size: 3rem;
+        font-family: "Ubuntu", sans-serif;
+
+        span {
+            padding-top: 15px;
+            font-size: 1.3rem;
+            display: block;
+            font-weight: 200;
+            font-family: "Source Sans Pro", sans-serif;
+        }
+    }
+
+    .call-to-action {
+        text-align: center;
+
+        a {
+            background: #fec537;
+            color: $main-menu-background;
+            padding: 15px 30px;
+            text-decoration: none;
+            margin: 0 auto;
+            display: inline-block;
+            border-radius: 20px;
+        }
+    }
+}
+
+#highlights {
+
+    .highlight-item {
+        flex-grow: 1;
+        text-align: center;
+        padding: 30px 0;
+
+        .icon {
+            font-size: 3rem;
+            color: #00a3da;
+        }
+
+        .title {
+            color: $main-menu-background;
+            padding-top: 20px;
+        }
+
+        .subtitle {
+            font-size: 0.9rem;
+            padding: 10px 30px;
+            color: #AAA;
+        }
+    }
+}
+
+#about {
+    background: #EEE;
+
+    .wrapper div {
+        margin: 25px 0;
+    }
+
+    img {
+        max-width: 100%;
+        opacity: 0.8;
+        margin: 25px 0;
+        border: 5px solid #FFF;
+    }
+
+    h3 {
+        font-size: 2rem;
+        text-align: center;
+        color: $main-menu-background;
+
+        i {
+            font-style: normal;
+            color: #fec537;
+            font-weight: bold;
+            margin: 0 10px;
+        }
+
+        i:first-of-type {
+            margin-left: 0;
+        }
+    }
+
+    p {
+        text-align: justify;
+        line-height: 1.75rem;
+    }
+}
+
+#subscribe {
+    padding: 35px 0;
+
+    h3 {
+        font-size: 2rem;
+        color: $main-menu-background;
+    }
+
+    form {
+        flex-grow: 1;
+        display: flex;
+        padding-top: 25px;
+
+        input {
+            outline: 0;
+            border: 1px solid #888;
+            border-radius: 20px;
+            padding: 10px 20px;
+        }
+
+        input[type=email] {
+            flex-grow: 1;
+            margin-right: 15px;
+        }
+
+        input[type=submit] {
+            background: $main-menu-background;
+            color: #FFF;
+        }
+
+    }
+}
+
+footer {
+    background: $main-menu-background;
+    color: #FFF;
+    padding: 25px 0;
+
+    div {
+        padding: 10px 0;
+    }
+
+    .social-links-container {
+        a {
+            text-decoration: none;
+            color: inherit;
+            margin: 5px;
+        }
+
+        a:last-of-type {
+            margin-right: 0;
+        }
+
+        a:hover {
+            color: #AAA;
+        }
+    }
+}
+
+#quick-links-container {
+    background: #105b89;
+    color: #FFF;
+
+    .wrapper > div {
+        flex-grow: 1;
+        padding: 30px 0;
+        line-height: 1.8rem;
+
+        i {
+            margin-right: 15px;
+        }
+    }
+
+    h3 {
+        margin-bottom: 15px;
+    }
+
+    a {
+        text-decoration: none;
+        color: #CCC;
+        display: block;
+    }
+
+    a:hover {
+        color: #FFF;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .wrapper {
+        flex-direction: row;
+    }
+
+    #top-info-bar {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: #444;
+        display: flex;
+
+        .social {
+            font-size: 1.2rem;
+            margin-right: 5px;
+        }
+
+        .symbol {
+            color: #00a3da;
+            margin-right: 3px;
+            position: relative;
+            top: 1px;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+
+            hover {
+                color: black;
+            }
+        }
+    }
+
+    #main-navbar-container {
+        .brand {
+            padding: 0;
+        }
+    }
+
+    #call-to-action-container {
+        height: 550px;
+
+        .wrapper {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        h3 {
+            text-align: left;
+            font-size: 4.5rem;
+            max-width: 60%;
+        }
+
+        .call-to-action {
+            font-size: 1.2rem;
+            text-align: left;
+        }
+    }
+
+    #highlights {
+        margin-top: 10px;
+        flex-direction: row;
+    }
+
+    #subscribe {
+        form {
+            padding-top: 0;
+            padding-left: 100px;
+        }
+    }
+
+    #about {
+
+        img {
+            max-width: 30%;
+        }
+
+        h3 {
+            padding-left: 35px;
+            text-align: left;
+        }
+
+        p {
+            padding-left: 35px;
+            text-align: left;
+        }
+    }
+}

@@ -1,0 +1,303 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro|Ubuntu&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+h3 {
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  max-width: 1044px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+
+.align-top {
+  align-self: flex-start;
+}
+
+#top-info-bar {
+  display: none;
+}
+
+.brand {
+  font-size: 2rem;
+}
+.brand span {
+  color: #00a3da;
+}
+
+#main-navbar-container {
+  background: #0d4a71;
+  color: #fff;
+}
+#main-navbar-container .wrapper {
+  align-items: center;
+}
+#main-navbar-container .brand {
+  padding-top: 25px;
+}
+#main-navbar-container nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: inherit;
+  margin: 0 20px;
+  padding: 30px 0;
+  display: inline-block;
+}
+#main-navbar-container nav a:last-of-type {
+  margin-right: 0;
+}
+#main-navbar-container nav a:first-of-type {
+  margin-left: 0;
+}
+#main-navbar-container nav a.active,
+#main-navbar-container nav a:hover {
+  border-bottom: 7px solid #fec537;
+}
+
+#call-to-action-container {
+  height: 350px;
+  overflow: hidden;
+}
+#call-to-action-container .image-container {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  transition: left 0.5s;
+}
+#call-to-action-container .image-container .wrapper {
+  justify-content: space-evenly;
+  height: 100%;
+}
+#call-to-action-container h3 {
+  margin: 0;
+  text-align: center;
+  color: #fff;
+  font-size: 3rem;
+  font-family: "Ubuntu", sans-serif;
+}
+#call-to-action-container h3 span {
+  padding-top: 15px;
+  font-size: 1.3rem;
+  display: block;
+  font-weight: 200;
+  font-family: "Source Sans Pro", sans-serif;
+}
+#call-to-action-container .call-to-action {
+  text-align: center;
+}
+#call-to-action-container .call-to-action a {
+  background: #fec537;
+  color: #0d4a71;
+  padding: 15px 30px;
+  text-decoration: none;
+  margin: 0 auto;
+  display: inline-block;
+  border-radius: 20px;
+}
+
+#highlights .highlight-item {
+  flex-grow: 1;
+  text-align: center;
+  padding: 30px 0;
+}
+#highlights .highlight-item .icon {
+  font-size: 3rem;
+  color: #00a3da;
+}
+#highlights .highlight-item .title {
+  color: #0d4a71;
+  padding-top: 20px;
+}
+#highlights .highlight-item .subtitle {
+  font-size: 0.9rem;
+  padding: 10px 30px;
+  color: #AAA;
+}
+
+#about {
+  background: #EEE;
+}
+#about .wrapper div {
+  margin: 25px 0;
+}
+#about img {
+  max-width: 100%;
+  opacity: 0.8;
+  margin: 25px 0;
+  border: 5px solid #FFF;
+}
+#about h3 {
+  font-size: 2rem;
+  text-align: center;
+  color: #0d4a71;
+}
+#about h3 i {
+  font-style: normal;
+  color: #fec537;
+  font-weight: bold;
+  margin: 0 10px;
+}
+#about h3 i:first-of-type {
+  margin-left: 0;
+}
+#about p {
+  text-align: justify;
+  line-height: 1.75rem;
+}
+
+#subscribe {
+  padding: 35px 0;
+}
+#subscribe h3 {
+  font-size: 2rem;
+  color: #0d4a71;
+}
+#subscribe form {
+  flex-grow: 1;
+  display: flex;
+  padding-top: 25px;
+}
+#subscribe form input {
+  outline: 0;
+  border: 1px solid #888;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+#subscribe form input[type=email] {
+  flex-grow: 1;
+  margin-right: 15px;
+}
+#subscribe form input[type=submit] {
+  background: #0d4a71;
+  color: #FFF;
+}
+
+footer {
+  background: #0d4a71;
+  color: #FFF;
+  padding: 25px 0;
+}
+footer div {
+  padding: 10px 0;
+}
+footer .social-links-container a {
+  text-decoration: none;
+  color: inherit;
+  margin: 5px;
+}
+footer .social-links-container a:last-of-type {
+  margin-right: 0;
+}
+footer .social-links-container a:hover {
+  color: #AAA;
+}
+
+#quick-links-container {
+  background: #105b89;
+  color: #FFF;
+}
+#quick-links-container .wrapper > div {
+  flex-grow: 1;
+  padding: 30px 0;
+  line-height: 1.8rem;
+}
+#quick-links-container .wrapper > div i {
+  margin-right: 15px;
+}
+#quick-links-container h3 {
+  margin-bottom: 15px;
+}
+#quick-links-container a {
+  text-decoration: none;
+  color: #CCC;
+  display: block;
+}
+#quick-links-container a:hover {
+  color: #FFF;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    flex-direction: row;
+  }
+
+  #top-info-bar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #444;
+    display: flex;
+  }
+  #top-info-bar .social {
+    font-size: 1.2rem;
+    margin-right: 5px;
+  }
+  #top-info-bar .symbol {
+    color: #00a3da;
+    margin-right: 3px;
+    position: relative;
+    top: 1px;
+  }
+  #top-info-bar a {
+    text-decoration: none;
+    color: inherit;
+  }
+  #top-info-bar a hover {
+    color: black;
+  }
+
+  #main-navbar-container .brand {
+    padding: 0;
+  }
+
+  #call-to-action-container {
+    height: 550px;
+  }
+  #call-to-action-container .wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #call-to-action-container h3 {
+    text-align: left;
+    font-size: 4.5rem;
+    max-width: 60%;
+  }
+  #call-to-action-container .call-to-action {
+    font-size: 1.2rem;
+    text-align: left;
+  }
+
+  #highlights {
+    margin-top: 10px;
+    flex-direction: row;
+  }
+
+  #subscribe form {
+    padding-top: 0;
+    padding-left: 100px;
+  }
+
+  #about img {
+    max-width: 30%;
+  }
+  #about h3 {
+    padding-left: 35px;
+    text-align: left;
+  }
+  #about p {
+    padding-left: 35px;
+    text-align: left;
+  }
+}
